@@ -67,7 +67,7 @@ ol {
 /* Заголовок */
 
 .title {
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-size: 75px;
   font-weight: 700;
   text-transform: uppercase;
@@ -96,6 +96,7 @@ ol {
   width: inherit;
   height: 386px;
   object-fit: cover;
+  object-position: center;
 }
 
 .content__card-link {
@@ -171,12 +172,13 @@ ol {
 
 .content__video-card-thumbnail {
   object-fit: cover;
+  object-position: center;
   width: 200px;
   height: 102px;
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
@@ -188,7 +190,7 @@ ol {
 }
 
 .content__video-card-description {
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: #fff;
@@ -206,7 +208,7 @@ ol {
 /* Кнопка */
 
 .button {
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: #fff;
@@ -253,7 +255,7 @@ ol {
 }
 
 .search-form__textfield {
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   color: #fff;
   background-color: transparent;
   font-size: 18px;
@@ -309,7 +311,7 @@ ol {
 }
 
 .search-form__label-text {
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 16px;
   font-weight: 400;
   padding-left: 5px;
