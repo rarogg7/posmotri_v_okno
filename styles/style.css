@@ -16,7 +16,7 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 h1,
@@ -43,8 +43,10 @@ ol {
   width: 1140px;
   height: 530px;
   gap: 29px;
-  margin: 137px 31px;
+  margin: auto;
   align-items: flex-end;
+  margin-block-start: 50vh;
+  transform: translateY(-44%);
 }
 
 .content__details {
@@ -59,7 +61,6 @@ ol {
   display: flex;
   flex-direction: column;
   overflow: hidden scroll;
-  gap: 28px;
   height: 298px;
   width: 405px;
 }
@@ -99,12 +100,6 @@ ol {
   object-position: center;
 }
 
-.content__card-link {
-  text-decoration: none;
-  display: block;
-  margin: 3px;
-}
-
 /* Скрол */
 
 ::-webkit-scrollbar {
@@ -131,6 +126,7 @@ ol {
 
 .content__list-item {
   width: 398px;
+  margin-bottom: 28px;
 }
 
 .content__video-card {
@@ -138,7 +134,13 @@ ol {
   justify-content: space-between;
 }
 
-.content__card-link:active {
+.content__card-link {
+  text-decoration: none;
+  display: block;
+  margin: 3px;
+}
+
+.content__card-link_current {
   box-shadow: 0 0 0 2px #545050;
   background-color: #545050;
 }
@@ -148,6 +150,11 @@ ol {
   color: #ffffff;
   text-decoration-thickness: 0.1em;
   text-underline-offset: 3px;
+}
+
+.content__card-link:active {
+  box-shadow: 0 0 0 2px #545050;
+  background-color: #545050;
 }
 
 .content__card-link:focus {
@@ -166,14 +173,27 @@ ol {
 }
 
 .content__video-card-description-container {
-  position: relative;
-  line-height: 34px;
+  line-height: 33px;
+  width: 192px;
+}
+
+.content__video-card-description {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 20px;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .content__video-card-thumbnail {
   object-fit: cover;
   object-position: center;
-  width: 200px;
+  width: 194px;
   height: 102px;
 }
 
@@ -183,18 +203,10 @@ ol {
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
+  width: inherit;
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
-  width: 198px;
-}
-
-.content__video-card-description {
-  font-family: "Fira Sans Condensed", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  color: #fff;
-  line-height: 16px;
 }
 
 .search-form {
